@@ -32,9 +32,13 @@ typedef struct GAME
     int groundHeight;
     ALLEGRO_KEYBOARD_STATE KBstate;
     // ALLEGRO_BITMAP *bar1 = NULL; /* pointer to the bar's image bitmap */
-    ALLEGRO_BITMAP *bar1;
+    ALLEGRO_BITMAP *right1;
+    ALLEGRO_BITMAP *right2;
+    ALLEGRO_BITMAP *left1;
+    ALLEGRO_BITMAP *left2;
     //ALLEGRO_BITMAP *brick = NULL;
     ALLEGRO_BITMAP *brick;
+    ALLEGRO_BITMAP *gthorn;
     // ALLEGRO_DISPLAY *display = NULL;/* pointer to display */
     ALLEGRO_DISPLAY *display;
 }g;

@@ -72,8 +72,12 @@ void gameStructInit(g* gPtr)
     gPtr->velX = 0;
     gPtr->velY = 0;
     gPtr->gravity = 1;
-    gPtr->groundHeight = 440;
-    gPtr->bar1 = NULL;
+    gPtr->groundHeight = 430;//change this when the sceen h has been change
+    gPtr->right1 = NULL;
+    gPtr->right2 = NULL;
+    gPtr->left1 = NULL;
+    gPtr->left2 = NULL;
     gPtr->brick = NULL;
+    gPtr->gthorn= NULL;
     gPtr->display = NULL;
 }
