@@ -24,7 +24,7 @@ int main( void )
     GAME.left2 = al_load_bitmap( "left2.png");
     // barD_x = SCREEN_H / 2; /* give right paddle its initial X-coordinate */
     GAME.brick = al_load_bitmap( "brick.jpg");
-    GAME.gthorn = al_load_bitmap( "gthorn.jpg");
+    GAME.gthorn = al_load_bitmap( "gthorn.png");
     GAME.barD_x = SCREEN_W / 2; /* give right paddle its initial X-coordinate */
 
     while(1)
@@ -43,8 +43,10 @@ int main( void )
         }
         if (al_key_down(&GAME.KBstate, ALLEGRO_KEY_LEFT)){
         al_draw_bitmap( GAME.left1, GAME.barD_x,GAME.barD_y, 0);
-        al_draw_bitmap( GAME.left2, GAME.barD_x,GAME.barD_y, 0);
         }
+
+
+        al_draw_bitmap( GAME.left2, GAME.barD_x,GAME.barD_y, 0);
         moveAming(&GAME);
         groundthorn(&GAME);
        al_rest(0.01);

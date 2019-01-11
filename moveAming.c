@@ -15,7 +15,7 @@ void moveAming(g* gPtr)
         gPtr->barD_x += PADDLE_MOVE;
 
     // if(al_key_down(&KBstate, ALLEGRO_KEY_J) && jump)
-    if(al_key_down(&gPtr->KBstate, ALLEGRO_KEY_J) && gPtr->jump)
+    if(al_key_down(&gPtr->KBstate, ALLEGRO_KEY_J) && gPtr->jump)//JUMP 104
     {
         // velY = -jumpSpeed;
         gPtr->velY = -gPtr->jumpSpeed;
@@ -72,7 +72,7 @@ void gameStructInit(g* gPtr)
     gPtr->velX = 0;
     gPtr->velY = 0;
     gPtr->gravity = 1;
-    gPtr->groundHeight = 430;//change this when the sceen h has been change
+    gPtr->groundHeight = 430;//change this when the screen h has been change
     gPtr->right1 = NULL;
     gPtr->right2 = NULL;
     gPtr->left1 = NULL;
